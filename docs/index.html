@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th" class="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,8 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -53,298 +52,287 @@
   </script>
 </head>
 
-<body
-  class="min-h-screen flex flex-col
+<body class="min-h-screen flex flex-col
          font-sans
          bg-earth-light-bg text-earth-light-text
-         dark:bg-earth-dark-bg dark:text-earth-dark-text"
->
+         dark:bg-earth-dark-bg dark:text-earth-dark-text">
 
-<!-- Header -->
-<header class="relative border-b border-earth-light-border dark:border-earth-dark-border">
-  <div class="max-w-6xl mx-auto px-4 py-10 text-center">
-    <h1 class="text-3xl font-bold text-earth-light-primary dark:text-earth-dark-primary">
-      สรุปผลงานการพัฒนา Mobile Web Application
-    </h1>
+  <!-- Header -->
+  <header class="relative border-b border-earth-light-border dark:border-earth-dark-border">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-center">
+      <h1 class="text-3xl font-bold text-earth-light-primary dark:text-earth-dark-primary">
+        สรุปผลงานการพัฒนา Mobile Web Application
+      </h1>
 
-    <p class="mt-2 text-earth-light-muted dark:text-earth-dark-muted">
-      ภาคการศึกษา 2/2568
-    </p>
-
-    <div class="mt-5 space-y-1">
-      <p>
-        <span class="font-semibold text-earth-light-secondary dark:text-earth-dark-secondary">
-          ชื่อสกุล:
-        </span>
-        นายปวริศ กุลแก้ว
+      <p class="mt-2 text-earth-light-muted dark:text-earth-dark-muted">
+        ภาคการศึกษา 2/2568
       </p>
-      <p>
-        <span class="font-semibold text-earth-light-secondary dark:text-earth-dark-secondary">
-          รหัสนักศึกษา:
-        </span>
-        663380019-2
-      </p>
+
+      <div class="mt-5 space-y-1">
+        <p>
+          <span class="font-semibold text-earth-light-secondary dark:text-earth-dark-secondary">
+            ชื่อสกุล:
+          </span>
+          นายปวริศ กุลแก้ว
+        </p>
+        <p>
+          <span class="font-semibold text-earth-light-secondary dark:text-earth-dark-secondary">
+            รหัสนักศึกษา:
+          </span>
+          663380019-2
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- Toggle -->
-  <div class="absolute top-6 right-6">
-    <button
-      id="themeToggle"
-      class="flex items-center gap-2 px-4 py-2 rounded-full
+    <!-- Toggle -->
+    <div class="absolute top-6 right-6">
+      <button id="themeToggle" class="flex items-center gap-2 px-4 py-2 rounded-full
              bg-earth-light-card dark:bg-earth-dark-card
              border border-earth-light-border dark:border-earth-dark-border
              text-sm text-earth-light-secondary dark:text-earth-dark-secondary
-             hover:opacity-80 transition"
-    >
-      <span id="themeIcon">🌙</span>
-      <span id="themeText">Dark</span>
-    </button>
-  </div>
-</header>
+             hover:opacity-80 transition">
+        <span id="themeIcon">🌙</span>
+        <span id="themeText">Dark</span>
+      </button>
+    </div>
+  </header>
 
-<!-- Main -->
-<main class="flex-grow max-w-6xl mx-auto px-4 py-12">
+  <!-- Main -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-12">
 
-  <h2 class="text-xl md:text-2xl font-semibold text-earth-light-primary dark:text-earth-dark-primary mb-8">
-    สรุปผลงานการฝึกปฏิบัติรายสัปดาห์
-  </h2>
+    <h2 class="text-xl md:text-2xl font-semibold text-earth-light-primary dark:text-earth-dark-primary mb-8">
+      สรุปผลงานการฝึกปฏิบัติรายสัปดาห์
+    </h2>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <!-- Week 1 -->
-    <div
-      class="
+      <!-- Week 1 -->
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="https://th.bing.com/th/id/R.1f2a5c815c4ff9ce105874bc0da6d788?rik=h4gPJ9KQ68Rf9g&pid=ImgRaw&r=0"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 1: Workspace Setup
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          ติดตั้งเครื่องมือที่จำเป็นสำหรับหรับฝึกปฏิบัติการในรายวิชา ทดลองสร้าง ionic-vue และ ionic-project
-        </p>
-        <div class="space-y-2">
-          <a href="/mobileweb/lab01_vue/index.html"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="https://th.bing.com/th/id/R.1f2a5c815c4ff9ce105874bc0da6d788?rik=h4gPJ9KQ68Rf9g&pid=ImgRaw&r=0"
+          class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 1: Workspace Setup
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            ติดตั้งเครื่องมือที่จำเป็นสำหรับหรับฝึกปฏิบัติการในรายวิชา ทดลองสร้าง ionic-vue และ ionic-project
+          </p>
+          <div class="space-y-2">
+            <a href="/mobileweb/lab01_vue/index.html" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            Lab01 Vue
-          </a>
-          <a href="/mobileweb/lab01_react/index.html"
-             class="block text-center border border-earth-light-primary dark:border-earth-dark-primary
+              Lab01 Vue
+            </a>
+            <a href="/mobileweb/lab01_react/index.html" class="block text-center border border-earth-light-primary dark:border-earth-dark-primary
                     text-earth-light-primary dark:text-earth-dark-primary py-2 rounded-lg">
-            Lab01 React
-          </a>
+              Lab01 React
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Week 2 -->
-    <div
-      class="
+      <!-- Week 2 -->
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="https://miro.medium.com/v2/resize:fit:1140/1*r0TkcCU3hKl7yuG5fFcZVA.png"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 2: HTML5 & CSS3
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          การสร้างโครงร่างและออกแบบหน้าเว็บด้วย HTML5 และ CSS3
-        </p>
-        <div class="space-y-2">
-          <a href="/mobileweb/lab02_guide/index.html"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="https://miro.medium.com/v2/resize:fit:1140/1*r0TkcCU3hKl7yuG5fFcZVA.png"
+          class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 2: HTML5 & CSS3
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            การสร้างโครงร่างและออกแบบหน้าเว็บด้วย HTML5 และ CSS3
+          </p>
+          <div class="space-y-2">
+            <a href="/mobileweb/lab02_guide/index.html" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            ดูผลงาน
-          </a>
+              ดูผลงาน
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Week 3 -->
-    <div
-      class="
+      <!-- Week 3 -->
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="https://sep.com/wp-content/uploads/2024/05/JSvsTS.jpg"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 3: JavaScript & TypeScript
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          การเขียน JavaScript และ TypeScript
-        </p>
-        <div class="space-y-2">
-          <a href="/mobileweb/lab03_typescript/index.html"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="https://sep.com/wp-content/uploads/2024/05/JSvsTS.jpg"
+          class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 3: JavaScript & TypeScript
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            การเขียน JavaScript และ TypeScript
+          </p>
+          <div class="space-y-2">
+            <a href="/mobileweb/lab03_typescript/index.html" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            ดูผลงาน
-          </a>
+              ดูผลงาน
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="https://th.bing.com/th/id/R.fcc1d0f68124457e4150fd0569273d81?rik=WiBGbRZLiWY7jw&pid=ImgRaw&r=0"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 4: Ionic Vue
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          สร้าง Application ด้วย Ionic + Vue.js 
-        </p>
-        <div class="space-y-2">
-          <a href="/mobileweb/lab4.html"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="https://th.bing.com/th/id/R.fcc1d0f68124457e4150fd0569273d81?rik=WiBGbRZLiWY7jw&pid=ImgRaw&r=0"
+          class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 4: Ionic Vue
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            สร้าง Application ด้วย Ionic + Vue.js
+          </p>
+          <div class="space-y-2">
+            <a href="/mobileweb/lab4.html" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            ดูผลงาน
-          </a>
+              ดูผลงาน
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="https://ionicacademy.com/wp-content/uploads/2022/07/ionic-react-basics-course-1024x498.png"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 5: Ionic React
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          สร้าง Application ด้วย Ionic + React.js 
-        </p>
-        <div class="space-y-2">
-          <a href="/mobileweb/lab5.html"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="https://ionicacademy.com/wp-content/uploads/2022/07/ionic-react-basics-course-1024x498.png"
+          class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 5: Ionic React
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            สร้าง Application ด้วย Ionic + React.js
+          </p>
+          <div class="space-y-2">
+            <a href="/mobileweb/lab5.html" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            ดูผลงาน
-          </a>
+              ดูผลงาน
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="
+      <div class="
         flex flex-col h-full
         overflow-hidden
         bg-earth-light-card dark:bg-earth-dark-card
         border border-earth-light-border dark:border-earth-dark-border
         rounded-2xl shadow-lg hover:shadow-xl transition
-      "
-    >
+      ">
 
-      <img
-        src="./lab6.png"
-        class="h-44 w-full object-cover rounded-t-2xl"
-      />
-      <div class="p-6 flex flex-col h-full">
-        <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
-          Week 6: Ionic Vue + Firebase (firestore)
-        </h3>
-        <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
-          สร้าง Application ด้วย Ionic + Vue.js + Firestore
-        </p>
-        <div class="space-y-2">
-          <a href="https://github.com/PavaDev/mobileweb/tree/main/apps/lab06-expense"
-             class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+        <img src="./lab6.png" class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 6: Ionic Vue + Firebase (firestore)
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            สร้าง Application ด้วย Ionic + Vue.js + Firestore
+          </p>
+          <div class="space-y-2">
+            <a href="https://github.com/PavaDev/mobileweb/tree/main/apps/lab06-expense" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
                     text-earth-light-bg py-2 rounded-lg">
-            ดูผลงาน
-          </a>
+              ดูผลงาน
+            </a>
+          </div>
         </div>
       </div>
+
+      <div class="
+        flex flex-col h-full
+        overflow-hidden
+        bg-earth-light-card dark:bg-earth-dark-card
+        border border-earth-light-border dark:border-earth-dark-border
+        rounded-2xl shadow-lg hover:shadow-xl transition
+      ">
+
+        <img src="./lab7.png" class="h-44 w-full object-cover rounded-t-2xl" />
+        <div class="p-6 flex flex-col h-full">
+          <h3 class="text-lg font-semibold text-earth-light-secondary dark:text-earth-dark-secondary mb-2">
+            Week 7: Ionic Vue + Firebase (Authentication)
+          </h3>
+          <p class="text-sm text-earth-light-muted dark:text-earth-dark-muted mb-4 flex-grow">
+            สร้าง Application ด้วย Ionic + Vue.js + Firebase (Authentication)
+          </p>
+          <div class="space-y-2">
+            <a href="https://github.com/PavaDev/mobileweb/tree/main/apps/lab07-authen" class="block text-center bg-earth-light-primary dark:bg-earth-dark-primary
+                    text-earth-light-bg py-2 rounded-lg">
+              ดูผลงาน
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-  </div>
-</main>
-
-<!-- Footer -->
-<footer class="border-t border-earth-light-border dark:border-earth-dark-border mt-12">
-  <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm
+  <!-- Footer -->
+  <footer class="border-t border-earth-light-border dark:border-earth-dark-border mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm
               text-earth-light-muted dark:text-earth-dark-muted">
-    © 2025 Mobile Web Application Development — College of Computing  
-    Khon Kaen University
-  </div>
-</footer>
+      © 2025 Mobile Web Application Development — College of Computing
+      Khon Kaen University
+    </div>
+  </footer>
 
-<!-- Toggle Script -->
-<script>
-  const html = document.documentElement;
-  const btn = document.getElementById('themeToggle');
-  const icon = document.getElementById('themeIcon');
-  const text = document.getElementById('themeText');
+  <!-- Toggle Script -->
+  <script>
+    const html = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const icon = document.getElementById('themeIcon');
+    const text = document.getElementById('themeText');
 
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light') {
-    html.classList.remove('dark');
-    icon.textContent = '☀️';
-    text.textContent = 'Light';
-  }
-
-  btn.addEventListener('click', () => {
-    const isDark = html.classList.toggle('dark');
-    if (isDark) {
-      icon.textContent = '🌙';
-      text.textContent = 'Dark';
-      localStorage.setItem('theme', 'dark');
-    } else {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      html.classList.remove('dark');
       icon.textContent = '☀️';
       text.textContent = 'Light';
-      localStorage.setItem('theme', 'light');
     }
-  });
-</script>
+
+    btn.addEventListener('click', () => {
+      const isDark = html.classList.toggle('dark');
+      if (isDark) {
+        icon.textContent = '🌙';
+        text.textContent = 'Dark';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        icon.textContent = '☀️';
+        text.textContent = 'Light';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
 
 </body>
+
 </html>
