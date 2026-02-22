@@ -14,7 +14,7 @@ import { code } from "ionicons/icons";
 const firebaseConfig = {
   apiKey: "",
   authDomain: "",
-  projectId: "fir-authentication-e36d5",
+  projectId: "",
   storageBucket: "",
   messagingSenderId: "",
   appId: "",
